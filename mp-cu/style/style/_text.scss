@@ -1,0 +1,108 @@
+@import '../app/var';
+@import '../app/mixins';
+
+.text {
+	@each $class, $value in $fontsize {
+		&-#{$class}, &-#{$value / 2} {
+			font-size: #{$value}rpx !important;
+		}
+	}
+	&-cut {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	@at-root [class*='text-linecut'] {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		word-break: break-all;
+	}
+	@for $i from 2 through 10 {
+		&-linecut-#{$i} {
+			-webkit-line-clamp: #{$i};
+		}
+	}
+	&-justify {
+		text-align: justify;
+	}
+	&-justify-line {
+		text-align: justify;
+		line-height: 0.5em;
+		margin-top: 0.5em;
+		&::after {
+			content: '.';
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	&-Abc {
+		text-transform: Capitalize;
+	}
+	&-ABC {
+		text-transform: Uppercase;
+	}
+	&-abc {
+		text-transform: Lowercase;
+	}
+	&-del, &-line {
+		text-decoration: line-through;
+	}
+	&-bottomline {
+		text-decoration: underline;
+	}
+	&-italic {
+		font-style: italic;
+	}
+	&-style-none {
+		text-decoration: none;
+	}
+	&-break {
+		word-break: break-word;
+		overflow-wrap: break-word;
+	}
+	&-reset {
+		color: inherit;
+	}
+	&-price::before {
+		content: '¥';
+		font-size: 80%;
+		margin-right: 2px;
+	}
+	&-hide {
+		font: 0/0 a;
+		color: transparent;
+		text-shadow: none;
+		background-color: transparent;
+		border: 0;
+	}
+    &-hover {
+        cursor: pointer;
+        transition: color 0.2s ease-out;
+        &:hover {
+            color: var(--mp-cu-app-color);
+        }
+    }
+    &-link {
+        cursor: pointer;
+        color: var(--mp-cu-app-color);
+        transition: color 0.3s;
+        outline: none;
+        border: 0;
+        &:hover {
+            color: var(--mp-cu-dark-color-1);
+        }
+    }
+    &-link-line {
+        cursor: pointer;
+        color: var(--mp-cu-app-color);
+        text-decoration: underline;
+        transition: color 0.3s;
+        outline: none;
+        border: 0;
+        &:hover {
+            color: var(--mp-cu-dark-color-1);
+        }
+    }
+}

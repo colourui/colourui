@@ -1,0 +1,28 @@
+@import '../app/var';
+
+//缩放尺寸
+
+.size-90 {
+    transform: rotate(90deg);
+}
+.size-180 {
+    transform: rotate(180deg);
+}
+.size-270 {
+    transform: rotate(270deg);
+}
+.size-x {
+    transform: scale(-1, 1);
+}
+.size-y {
+    transform: scale(1, -1);
+}
+.size-fw {
+    width: (18em / 14);
+    text-align: center;
+}
+@each $name, $value in $scales {
+    .size-#{$name} {
+        transform: scale(#{$value});
+    }
+}

@@ -1,0 +1,1 @@
+<text class="mp-i-icon {{icons}} {{textSize ? 'text-' + textSize:''}} {{scaleSize ? 'size-' + scaleSize: ''}} {{ui}}"/>

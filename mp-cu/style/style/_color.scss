@@ -1,0 +1,113 @@
+@import '../app/var';
+@import '../app/mixins';
+
+@each $name, $value in $colors {
+    //背景颜色
+    .bg-#{$name} {
+        background-color: $value !important;
+        @if $name == 'yellow'{
+            color: $dark-3 !important;
+        } @else {
+            color: white !important;
+        }
+    }
+    //字体颜色
+    .text-#{$name} {
+        color: $value !important;
+    }
+    //渐变高亮色
+    .bg-#{$name}-light {
+        background-image: linear-gradient(45deg, white, mix(white, $value, 85%)) !important;
+        color: $value !important;
+    }
+    .text-#{$name}-light {
+        background: linear-gradient(45deg, white, mix(white, $value, 85%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent !important;
+    }
+
+    //透明度
+    @if $name != 'white' {
+        @for $i from 1 to 10 {
+            @if $i == 1 {
+                //浅色
+                .bg-#{$name}-thin, .bg-#{$name}-thin-1{
+                    background-color:rgba($value, 0.1) !important;
+                    color: $value !important;
+                }
+                .text-#{$name}-thin, .text-#{$name}-thin-1 {
+                    color: rgba($value, 0.1) !important;
+                }
+            } @else {
+                //浅色
+                .bg-#{$name}-thin-#{$i} {
+                    background-color: #{rgba($value, 0.1 * $i)} !important;
+                    @if $i > 4 {
+                        color: white !important;
+                    } @else {
+                        color: $value !important;
+                    }
+                }
+                .text-#{$name}-thin-#{$i} {
+                    color: #{rgba($value, 0.1 * $i)} !important;
+                }
+            }
+        }
+    }
+    //混合渐变色
+    @each $name_sub, $val_sub in $colors {
+        @if $name != $name_sub {
+            .bg-#{$name}-#{$name_sub} {
+                background-image: linear-gradient(130deg, $value, $val_sub) !important;
+                color: white !important;
+            }
+            .text-#{$name}-#{$name_sub} {
+                background: linear-gradient(130deg, $value, $val_sub);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+            }
+        }
+    }
+    //条纹背景
+    .bg-#{$name}-stripes {
+        background-color: #{mix(rgba(255, 255, 255, 0), desaturate($value, 45%), 93%)} !important;
+        background-image: linear-gradient(225deg,
+            #{mix(rgba(255, 255, 255, 0), $value, 50%)} 10%,
+            transparent 0, transparent 50%,
+            #{mix(rgba(255, 255, 255, 0), $value, 50%)} 0,
+            #{mix(rgba(255, 255, 255, 0), $value, 50%)} 60%,
+            transparent 0, transparent
+        ) !important;
+        background-size: 7.07px 7.07px !important;
+    }
+}
+
+@each $name, $value in $darks {
+    .bg-#{$name} {
+        background-color: $value !important;
+        color: white !important;
+    }
+    .text-#{$name} {
+        color: $value !important;
+    }
+}
+
+@each $name, $value in $grays {
+    .bg-#{$name} {
+        background-color: $value !important;
+        color: $dark-3 !important;
+    }
+    .text-#{$name} {
+        color: $value !important;
+    }
+}
+
+.bg-none {
+    background: transparent;
+    color: inherit !important;
+}
+.text-none {
+    color: inherit !important;
+}

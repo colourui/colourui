@@ -1,0 +1,110 @@
+@import '../app/var';
+@import '../app/mixins';
+
+.bg-square {
+    @include bg-square;
+}
+
+.bg-mask {
+    position: relative;
+    color: $white;
+    > view, > text {
+        position: relative;
+        color: $white;
+        z-index: 1;
+    }
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        @include position-center;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+    }
+    @for $i from 1 to 10 {
+        @at-root .bg-mask-#{$i * 10}::before {
+            background: #{rgba(0, 0, 0, 0.1 * $i)};
+        }
+    }
+    @at-root .bg-mask-top::before {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.01));
+    }
+    @at-root .bg-white-top {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
+    }
+    @at-root .bg-mask-bottom::before {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 1));
+    }
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-blur {
+    position: relative;
+    > view, > text {
+        position: relative;
+        z-index: 1;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        @include position-center;
+        border-radius: inherit;
+        transform-origin: 0 0;
+        pointer-events: none;
+        box-sizing: border-box;
+    }
+}
+
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
+    .bg-blur::before {
+        @include blur;
+        background-color: var(--ui-Blur-1);
+    }
+    .bg-blur-1::before {
+        @include blur;
+        background-color: var(--ui-Blur-2);
+    }
+    .bg-blur-2::before {
+        @include blur;
+        background-color: var(--ui-Blur-3);
+    }
+}
+
+@supports not (backdrop-filter: blur(5px)) {
+    .bg-blur {
+        color: var(--ui-TC);
+        &::before {
+            background-color: var(--ui-BG);
+        }
+    }
+    .bg-blur-1 {
+        color: var(--ui-TC);
+        &::before {
+            background-color: var(--ui-BG-1);
+        }
+    }
+    .bg-blur-2 {
+        color: var(--ui-TC);
+        &::before {
+            background-color: var(--ui-BG-2);
+        }
+    }
+}
+
+.bg-grid-gray {
+    background-color: $gray-g;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+    mask-image: linear-gradient(0deg, $white, rgba(255, 255, 255, .6));
+    background-position: 0 0;
+}

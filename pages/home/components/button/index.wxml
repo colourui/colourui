@@ -1,0 +1,162 @@
+<view class="mp-container">
+    <!--ui-title title="形状" depth="2" isIcon/-->
+    <view class="p-3 flex-items-center">
+        <mp-button isRadius>方块</mp-button>
+        <mp-button ui="ml-4">默认</mp-button>
+        <mp-button ui="ml-4" round>圆角</mp-button>
+        <mp-button ui="ml-4" icon>
+            <mp-icon name="share"/>
+        </mp-button>
+    </view>
+
+    <!--ui-title title="颜色" depth="2" isIcon/-->
+    <view class="p-3 flex-items-center">
+        <mp-button ui="bg-green">按钮</mp-button>
+        <mp-button ui="ml-3 bg-green-thin">按钮</mp-button>
+        <mp-button ui="ml-3 bg-green-gradient">按钮</mp-button>
+        <mp-button ui="ml-3 bg-green-light">按钮</mp-button>
+    </view>
+    <view class="p-3 flex-items-center">
+        <mp-button ui="bg-blue">按钮</mp-button>
+        <mp-button ui="ml-3 bg-blue-thin">按钮</mp-button>
+        <mp-button ui="ml-3 bg-blue-gradient">按钮</mp-button>
+        <mp-button ui="ml-3 bg-blue-light">按钮</mp-button>
+    </view>
+
+    <!--ui-title title="尺寸" depth="2" isIcon/-->
+    <view class="p-3 flex-items-center">
+        <mp-button size="sm">sm</mp-button>
+        <mp-button ui="ml-3" size="df">默认</mp-button>
+        <mp-button ui="ml-3" size="lg">lg</mp-button>
+        <mp-button ui="ml-3" size="xl">xl</mp-button>
+    </view>
+
+    <!--ui-title title="块状" depth="2" isIcon/-->
+    <view class="p-3">
+        <mp-button block>按钮</mp-button>
+    </view>
+
+    <!--ui-title title="阴影" depth="2" isIcon/-->
+    <view class="p-3 flex-items-center">
+        <mp-button shadow="sm">按钮</mp-button>
+        <mp-button ui="ml-3" shadow="df">按钮</mp-button>
+        <mp-button ui="ml-3" shadow="lg">按钮</mp-button>
+        <mp-button ui="ml-3 bg-green" bgShadow="green">按钮</mp-button>
+    </view>
+
+    <!--ui-title title="边框" depth="2" isIcon/-->
+    <view class="p-3 flex-between">
+        <mp-button ui="border bg-none">按钮</mp-button>
+        <mp-button ui="borders bg-none ml-3">按钮</mp-button>
+        <mp-button ui="borderss bg-none ml-3">按钮</mp-button>
+        <mp-button ui="dashed bg-none ml-3">按钮</mp-button>
+    </view>
+    <view class="p-3 flex-between">
+        <button class="ui-btn bg-orange-thin">按钮</button>
+        <button class="ui-btn border border-orange  bg-orange-thin">按钮</button>
+        <button class="ui-btn borders border-orange bg-orange-thin">按钮</button>
+        <button class="ui-btn borderss border-orange bg-orange-thin">按钮</button>
+    </view>
+    <view class="p-3 flex-between">
+        <button class="ui-btn bg-blue-light">按钮</button>
+        <button class="ui-btn border border-blue bg-blue-light">按钮</button>
+        <button class="ui-btn borders border-blue bg-blue-light">按钮</button>
+        <button class="ui-btn borderss border-blue bg-blue-light">按钮</button>
+    </view>
+    <view class="p-3 flex-between">
+        <button class="ui-btn dashed border-green bg-green-thin">按钮</button>
+        <button class="ui-btn dashed border-green bg-green-thin">按钮</button>
+        <button class="ui-btn dashed border-green bg-green-thin">按钮</button>
+        <button class="ui-btn dashed border-green bg-green-light">按钮</button>
+    </view>
+    <view class="p-3 flex-between">
+        <button class="ui-btn border border-red bg-red-light">按钮</button>
+        <button class="ui-btn border border-yellow bg-yellow-light">按钮</button>
+        <button class="ui-btn border border-green bg-green-light">按钮</button>
+        <button class="ui-btn border border-blue bg-blue-light">按钮</button>
+    </view>
+    <view class="p-3 flex-between">
+        <button class="ui-btn icon bg-none border border-blue">
+            <text class="cicon-link text-blue"/>
+        </button>
+        <button class="ui-btn icon lg borders bg-none border-bluegreen">
+            <text class="cicon-link text-green/"></text>
+        </button>
+        <button class="ui-btn icon round xl borderss bg-none border-yellow">
+            <text class="cicon-link text-yellow"/>
+        </button>
+    </view>
+
+    <!--ui-title title="无效" depth="2" isIcon/-->
+    <view class="p-3 flex-between">
+        <button class="ui-btn" disabled>按钮</button>
+        <button class="ui-btn" disabled>按钮</button>
+        <button class="ui-btn" disabled>按钮</button>
+        <button class="ui-btn" disabled>按钮</button>
+    </view>
+
+    <!--ui-title title="图标" depth="2" isIcon/-->
+    <view class="p-3">
+        <button class="ui-btn block">
+            <text>按钮</text>
+            <text class="_icon-add-round"/>
+        </button>
+    </view>
+    <view class="p-3">
+        <button class="ui-btn block">
+            <text>按钮</text>
+            <text class="_icon-add-round"/>
+        </button>
+    </view>
+    <view class="p-3">
+        <button class="ui-btn xl">
+            <text>按钮</text>
+            <text class="_icon-add-round"/>
+        </button>
+        <button class="ui-btn xxl">
+            <text>按钮</text>
+            <text class="_icon-add-round"/>
+        </button>
+    </view>
+    <view class="p-3">
+        <button class="ui-btn block">按钮</button>
+    </view>
+    <view class="p-3">
+        <button class="ui-btn block">按钮</button>
+    </view>
+    <view class="p-3">
+        <button class="ui-btn xl">按钮</button>
+        <button class="ui-btn xxl">按钮</button>
+    </view>
+
+    <!--ui-title depth="2" title="加载" isIcon/-->
+    <view class="p-3">
+        <button class="ui-btn block">
+            <text>按钮</text>
+            <text class="_icon-loader icon-spin"/>
+        </button>
+    </view>
+    <view class="p-3">
+        <button class="ui-btn block">
+            <text>按钮</text>
+            <!--ui-loading color/-->
+        </button>
+    </view>
+
+    <view class="p-3">
+        <button class="ui-btn xl">
+            <text>按钮</text>
+            <text class="_icon-loader icon-spin"/>
+        </button>
+        <button class="ui-btn xxl">
+            <text>按钮</text>
+            <text class="_icon-loader icon-spin"/>
+        </button>
+    </view>
+
+    <!--ui-title depth="2" title="填充无样式" isIcon/-->
+    <view class="position-relative p-5">
+        <button class="ui-btn none-style">sx</button>
+    </view>
+
+</view>

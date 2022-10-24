@@ -1,0 +1,40 @@
+// 核心主题样式文件
+@mixin theme-dark {
+
+    // 背景色
+    --mp-BG:                        #393939;
+    --mp-BG-1:                      #333333;
+    --mp-BG-2:                      #2c2c2c;
+    --mp-BG-3:                      #292929;
+    --mp-BG-4:                      #222222;
+
+    // 文本色
+    --mp-TC:                       	#ffffff;
+    --mp-TC-1:                      #d4d4d4;
+    --mp-TC-2:                      #919191;
+    --mp-TC-3:                      #6a6a6a;
+    --mp-TC-4:                      #474747;
+
+    // 模糊
+    --mp-Blur:                    	rgba(38, 38, 38, 0.98);
+    --mp-Blur-1:                	rgba(38, 38, 38, 0.75);
+    --mp-Blur-2:                	rgba(38, 38, 38, 0.25);
+    --mp-Blur-3:                	rgba(38, 38, 38, 0.05);
+
+    // 边框
+    --mp-Border:           		   	rgba(119, 119, 119, 0.25);
+    --mp-Outline:                   rgba(255,255,255,0.1);
+    --mp-Line:                      rgba(119,119,119,0.25);
+
+    // 透明与阴影
+    --mp-Shadow:           		   	0 .5em 1em rgba(0, 0, 0, 0.45);
+    --mp-Shadow-sm:                 0 .125em .25em rgba(0, 0, 0, 0.475);
+    --mp-Shadow-lg:                 0 1em 3em rgba(0, 0, 0, 0.475);
+    --mp-Shadow-inset:              inset 0 1px 2px rgba(0, 0, 0, 0.475);
+
+    --mp-Shadow-opacity:            0.55;
+    --mp-Shadow-opacity-sm:         0.175;
+    --mp-Shadow-opacity-lg:         0.75;
+
+    --mp-BG-opacity:    			.1;
+} 

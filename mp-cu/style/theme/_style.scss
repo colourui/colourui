@@ -1,0 +1,44 @@
+@import '../app/var';
+@import '../app/mixins';
+@import './light';  //浅色主题
+@import './dark';   //深色主题
+
+// 多主题
+.theme-light {
+    @include theme-light;
+}
+.theme-dark {
+    @include theme-dark;
+}
+
+@each $value in ('', '-1', '-2', '-3', '-4') {
+    .mp-BG#{$value} {
+        background-color: var(--mp-BG#{$value}) !important;
+        color: var(--mp-TC);
+    }
+    .mp-TC#{$value} {
+        color: var(--mp-TC#{$value}) !important;
+    }
+    .ui-BG-Main#{$value} {
+        background-color: var(--mp-BG-Main#{$value}) !important;
+        color: var(--mp-BG-Main-TC) !important;
+    }
+    .ui-TC-Main#{$value} {
+        color: var(--mp-BG-Main#{$value}) !important;
+    }
+}
+
+//主色调
+@each $name, $value in $colors {
+    .color-#{$name} {
+        --mp-cu-app-color: #{$value};
+        @each $num, $val in $percents {
+            --mp-cu-app-color-#{$num}: #{mix(rgba(255, 255, 255, 1), desaturate($value, 0%), $val)};
+        }
+        @for $i from 1 to 10 {
+            --mp-cu-thin-color-#{$i}: #{rgba($value, 0.1 * $i)};
+        }
+        --mp-cu-dark-color-1: #{mix(rgba(0, 0, 0, 1), desaturate($value, 10%), 1%)};
+        --mp-cu-dark-color-2: #{mix(rgba(0, 0, 0, 1), desaturate($value, 20%), 1%)};
+    }
+}

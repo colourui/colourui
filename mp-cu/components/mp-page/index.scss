@@ -1,0 +1,28 @@
+.mp-page {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    .mp-page-body {
+        flex: 1;
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .mp-page-body-app {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+.mp-page-body-loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}

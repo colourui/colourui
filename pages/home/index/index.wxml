@@ -1,0 +1,5 @@
+<mp-page>
+    mp-cu 重构版
+
+    <navigator url="/pages/home/components/button/index">按钮</navigator>
+</mp-page>

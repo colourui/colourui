@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/home/index/index",
+    "pages/home/components/button/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "MP-CU",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "mp-page": "mp-cu/components/mp-page/index",
+    "mp-icon": "mp-cu/components/mp-icon/index",
+    "mp-button": "mp-cu/components/mp-button/index"
+  },
+  "style": "v2",
+  "darkmode": true,
+  "sitemapLocation": "sitemap.json"
+}

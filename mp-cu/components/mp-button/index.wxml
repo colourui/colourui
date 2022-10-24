@@ -1,0 +1,23 @@
+<button class="mp-btn {{theme?'theme-' + theme:''}} {{color?'color-' + color:''}} {{icon?'icon':''}} {{round?'round':''}} {{isRadius?'no-radius':''}} {{shadow?'shadow-' + shadow:''}} {{bgShadow?'shadow shadow-' + bgShadow:''}} {{block?'block':''}} {{size}} {{ui}}"
+        disabled="{{disabled}}"
+        form-type="{{formType}}"
+        open-type="{{openType}}"
+        hover-class="none"
+        hover-stop-propagation="{{hoverStopPropagation}}"
+        lang="{{lang}}"
+        session-from="{{sessionFrom}}"
+        send-message-path="{{sendMessagePath}}"
+        send-message-title="{{sendMessageTitle}}"
+        send-message-img="{{sendMessageImg}}"
+        app-parameter="{{appParameter}}"
+        show-message-card="{{showMessageCard}}"
+        bindgetuserinfo="getuserinfo"
+        bindcontact="contact"
+        bindgetphonenumber="getphonenumber"
+        binderror="_error"
+        bindopensetting="opensetting"
+        bindlaunchapp="launchapp"
+        bindchooseavatar="chooseavatar"
+>
+    <slot></slot>
+</button>

@@ -1,0 +1,123 @@
+@import '../app/var';
+
+//调制过的渐变色
+.bg-blue-gradient {
+    background-image: linear-gradient(45deg, #00b8f9, #0166eb) !important;
+    color: $white !important;
+}
+.text-blue-gradient {
+    background: linear-gradient(45deg, #00b8f9, #0166eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-cyan-gradient {
+    background-image: linear-gradient(45deg, #06edfe, #48b2fe) !important;
+    color: $white !important;
+}
+.text-cyan-gradient {
+    background: linear-gradient(45deg, #06edfe, #48b2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-green-gradient {
+    background-image: linear-gradient(45deg, #3ab54a, #8cc63f) !important;
+    color: $white !important;
+}
+.text-green-gradient {
+    background: linear-gradient(45deg, #3ab54a, #8cc63f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-olive-gradient {
+    background-image: linear-gradient(45deg, #90e630, #39d266) !important;
+    color: $white !important;
+}
+.text-olive-gradient {
+    background: linear-gradient(45deg, #90e630, #39d266);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-purple-gradient {
+    background-image: linear-gradient(45deg, #9829ea, #5908fb) !important;
+    color: $white !important;
+}
+.text-purple-gradient {
+    background: linear-gradient(45deg, #9829ea, #5908fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-mauve-gradient {
+    background-image: linear-gradient(45deg, #c01f95, #7115cc) !important;
+    color: $white !important;
+}
+.text-mauve-gradient {
+    background: linear-gradient(45deg, #c01f95, #7115cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-pink-gradient {
+    background-image: linear-gradient(45deg, #fea894, #ff1047) !important;
+    color: $white !important;
+}
+.text-pink-gradient {
+    background: linear-gradient(45deg, #fea894, #ff1047);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-red-gradient {
+    background-image: linear-gradient(45deg, #f33a41, #ed0586) !important;
+    color: $white !important;
+}
+.text-red-gradient {
+    background: linear-gradient(45deg, #f33a41, #ed0586);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-orange-gradient {
+    background-image: linear-gradient(45deg, #ff9700, #ed1c24) !important;
+    color: $white !important;
+}
+.text-orange-gradient {
+    background: linear-gradient(45deg, #ff9700, #ed1c24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-yellow-gradient {
+    background-image: linear-gradient(45deg, #f5fe00, #ff6600) !important;
+    color: $dark-3 !important;
+}
+.text-yellow-gradient {
+    background: linear-gradient(45deg, #f5fe00, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-brown-gradient {
+    background-image: linear-gradient(45deg, #ca6f2e, #cb1413) !important;
+    color: $white !important;
+}
+.text-brown-gradient {
+    background: linear-gradient(45deg, #ca6f2e, #cb1413);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.bg-grey-gradient {
+    background-image: linear-gradient(45deg, #9aadb9, #354855) !important;
+    color: $white !important;
+}
+.text-grey-gradient {
+    background: linear-gradient(45deg, #9aadb9, #354855);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}

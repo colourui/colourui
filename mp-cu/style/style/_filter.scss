@@ -1,0 +1,76 @@
+//滤镜
+.filter-brightness {
+    filter: brightness(.5);
+}
+
+.filter-brightness-lg {
+    filter: brightness(1.5);
+}
+
+.filter-brightness-xl {
+    filter: brightness(2);
+}
+
+.filter-contrast {
+    filter: contrast(.5);
+}
+
+.filter-contrast-lg {
+    filter: contrast(1.25);
+}
+
+.filter-contrast-xl {
+    filter: contrast(2);
+}
+
+.filter-grayscale {
+    filter: grayscale(100%);
+}
+
+.filter-hue-rotate {
+    filter: hue-rotate(15deg);
+}
+
+.filter-hue-rotate-lg {
+    filter: hue-rotate(90deg);
+}
+
+.filter-hue-rotate-xl {
+    filter: hue-rotate(180deg);
+}
+
+.filter-hue-rotate-xxl {
+    filter: hue-rotate(-60deg);
+}
+
+.filter-invert {
+    filter: invert(100%);
+}
+
+.filter-saturate {
+    filter: saturate(.5);
+}
+
+.filter-saturate-lg {
+    filter: saturate(1.5);
+}
+
+.filter-saturate-xl {
+    filter: saturate(2);
+}
+
+.filter-sepia {
+    filter: sepia(100%);
+}
+
+.filter-blur {
+    filter: blur(4px);
+}
+
+.filter-blur-lg {
+    filter: blur(12px);
+}
+
+.filter-blur-xl {
+    filter: blur(24px);
+}
